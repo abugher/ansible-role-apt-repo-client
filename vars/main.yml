@@ -9,7 +9,7 @@ template_files:
   - owner:              'root'
     group:              'root'
     mode:               '0644'
-    src:                'templates/sources.list.j2'
+    src:                'templates/sources.j2'
     dest:               "/etc/apt/sources.list.d/apt.{{ domain }}.sources"
 commands:
   - command:            aptitude update
