@@ -1,3 +1,12 @@
+{# 
+Ubuntu Bionic will fail to match the machine if a protocol specifier is
+included.  Debian Bookworm will refuse to match the machine if a protocol
+specifier is not included. 
+#}
+{% if 'Ubuntu' == ansible_facts['distribution'] %}
+machine apt.{{ domain }}
+{% else %}
 machine http://apt.{{ domain }}
+{% endif %}
 login apt
 password {{ apt_password }}
