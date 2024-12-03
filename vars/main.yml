@@ -1,6 +1,4 @@
 ---
-gather_subset_of_facts:
-  - 'distribution'
 apt_password:           "{{ lookup('community.general.passwordstore', 'aaron/apt-repo-server/apt') }}"
 install_files:
   - owner:              'root'
