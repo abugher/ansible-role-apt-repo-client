@@ -3,3 +3,6 @@ dependencies:
   - role:     'automatic-updates'
     tags:     
       - 'dependency'
+  - role:     'dns-client'
+    tags:     
+      - 'dependency'
