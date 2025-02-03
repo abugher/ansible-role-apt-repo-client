@@ -1,5 +1,6 @@
 ---
 apt_password:           "{{ lookup('community.general.passwordstore', 'aaron/apt-repo-server/apt') }}"
+# gpg --homedir ../../../sensitive-ansible/roles/apt-repo-server/files/gnupg/ --export --armor > files/keyring.asc
 install_files:
   - owner:              'root'
     group:              'root'
