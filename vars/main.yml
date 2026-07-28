@@ -1,5 +1,5 @@
 ---
-apt_password:           "{{ lookup('community.general.passwordstore', 'aaron/apt-repo-server/apt') }}"
+apt_password:           "{{ lookup('community.general.passwordstore', 'aaron/controller/apt-repo-server/apt') }}"
 # gpg --homedir sensitive/files/gnupg/ --export --armor > files/keyring.asc
 install_files:
   - owner:              'root'
